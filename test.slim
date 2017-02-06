@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Slim のファイル例
+    meta name="keywords" content="template language"
+    meta name="author" content=author
+    link rel="icon" type="image/png" href=file_path("favicon.png")
+    javascript:
+      alert('Slim は javascript の埋め込みに対応します!')
+
+  body
+    h1 マークアップ例
+
+    #content
+      p このマークアップ例は Slim の典型的なファイルがどのようなものか示します。
+
+    == yield
+
+    - if items.any?
+      table#items
+        - for item in items
+          tr
+            td.name = item.name
+            td.price = item.price
+    - else
+      p アイテムが見つかりませんでした。いくつか目録を追加してください。
+        ありがとう!
+
+    div id="footer"
+      == render 'footer'
+      | Copyright &copy; #{@year} #{@author}
