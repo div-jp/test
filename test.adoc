@@ -20,10 +20,10 @@ puts "Hello, World!"
 
 
 
-
-aaa * hoge * aaa
-aaa* hoge *aaa
-aaa*hoge*aaa
+aaa *hoge* aaa +
+aaa * hoge * aaa +
+aaa* hoge *aaa +
+aaa*hoge*aaa +
 
 
 
