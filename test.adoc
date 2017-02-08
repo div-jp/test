@@ -11,6 +11,16 @@ An introduction to http://asciidoc.org[AsciiDoc].
 [source,ruby]
 puts "Hello, World!"
 
+
+標準, _イタリック_, *ボールド*, +モノ(monospaceフォント)+.
+
+``ダブルクォート'', `シングルクォート'.
+
+標準, ^上付き^, ~下付き~.
+
+
+
+
 aaa * hoge * aaa
 aaa* hoge *aaa
 aaa*hoge*aaa
